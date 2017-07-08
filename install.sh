@@ -16,7 +16,7 @@ EXTRA_DIR="$HOME/.extra"
 if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
 
 # Start installing all applications and binaries
-echo "Setting up your Mac..."
+echo "Setting up your personal settings..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
@@ -42,7 +42,8 @@ brew bundle
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source .macOS
+source macOS/.macOS
+source macOS/.dock
 
 # Install extra stuff
 if [ -d "$EXTRA_DIR" -a -f "$EXTRA_DIR/install.sh" ]; then
