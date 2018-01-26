@@ -1,68 +1,81 @@
 # DOTFILES
 
-These are my dotfiles. Take anything you want, but at your own risk.
+## Installing
 
-It targets macOS systems, but since it has some defensive checks it should work on *nix as well (works well on a few Linux boxes and Ubuntu 16).
+Clone repo and run
+```sh
+$ ./install.sh
+```
 
-## Package overview
+## Extensive list of applications
 
-
-
-## Install
-
-On a sparkling fresh installation of macOS:
-
-    sudo softwareupdate -i -a
-    xcode-select --install
-
-Install the dotfiles with either Git or curl:
-
-### Clone with Git
-
-    git clone https://github.com/webpro/dotfiles.git ~/.dotfiles
-    git clone https://github.com/webpro/extra.git ~/.extra       # Optional, see below
-    source ~/.dotfiles/install.sh
-
-### Remotely install using curl
-
-Alternatively, you can install this into `~/.dotfiles` remotely without Git using curl:
-
-    sh -c "`curl -fsSL https://raw.github.com/webpro/dotfiles/master/remote-install.sh`"
-
-Or, using wget:
-
-    sh -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/webpro/dotfiles/master/remote-install.sh`"
-
-## The `dotfiles` command
-
-    $ dotfiles help
-    Usage: dotfiles <command>
-
-    Commands:
-       help             This help message
-       edit             Open dotfiles in editor ($EDITOR_ALT) and Git GUI ($GIT_GUI)
-       reload           Reload dotfiles
-       test             Run tests
-       update           Update packages and pkg managers (OS, brew, npm, gem, pip)
-       clean            Clean up caches (brew, npm, gem, rvm)
-       macos            macOS system defaults
-       dock             Apply macOS Dock settings
-
-## Customize/extend
-
-You can have an additional, personal dotfiles repo at `~/.extra`.
-
-* The runcom `.bash_profile` sources all `~/.extra/runcom/*.sh` files.
-* The installer (`install.sh`) will run `~/.extra/install.sh`.
-
-## Additional resources
-
-* [Awesome Dotfiles](https://github.com/webpro/awesome-dotfiles)
-* [Homebrew](https://brew.sh)
-* [homebrew-cask](https://caskroom.github.io) / [usage](https://github.com/phinze/homebrew-cask/blob/master/USAGE.md)
-* [Bash prompt](https://wiki.archlinux.org/index.php/Color_Bash_Prompt)
-* [Solarized Color Theme for GNU ls](https://github.com/seebi/dircolors-solarized)
-
-## Credits
-
-Many thanks to the [dotfiles community](https://dotfiles.github.io/).
+App | Description | Part of this .dotfiles repo
+------------ | ------------- | ------------
+Alfred | OSX Spotlight on steroides | :x:
+Homebrew | OSX missing package manager like apt-get | :x:
+Fantastical | Calendar | :x:
+1Password | Password manager | :x:
+Docker | description | :x:
+Micro Snitch | description | :x:
+SSH Shuttle | description | :x:
+VS Code | description | :x:
+Chrome | description | :x:
+Spark | description | :x:
+iTerm | description | :x:
+Todoist | description | :x:
+Spotify | description | :x:
+Slack | description | :x:
+Git | Git cli | :x:
+Hub | GitHub cli | :x:
+SSH | description | :x:
+ZSH | description | :x:
+Z | description | :x:
+Yarn | description | :x:
+NodeJS | description | :x:
+Bash 4 | description | :x:
+findutisl | description | :x:
+coreutils | description | :x:
+brew-cask-completion | description | :x:
+zsh-completions | description | :x:
+direnv | description | :x:
+dockutil | description | :x:
+git-extras | description | :x:
+git-lfs | description | :x:
+mackup | description | :x:
+mas | description | :x:
+nvm | description | :x:
+trash | description | :x:
+awscli | description | :x:
+wget | description | :x:
+tree | description | :x:
+nmap | description | :x:
+openssl | description | :x:
+Bartender | description | :x:
+Caffeine | description | :x:
+Cleanmymac | description | :x:
+Chrome Canary | description | :x:
+GpgTools | description | :x:
+KeyCastr | description | :x:
+Little Snitch | description | :x:
+Flux | description | :x:
+Quip | description | :x:
+Rocket | description | :x:
+VirtualBox | description | :x:
+Softu2f | description | :x:
+qlcolorcode | description | :x:
+qlmarkdown | description | :x:
+quicklook-json | description | :x:
+quicklook-csv | description | :x:
+qlstephen | description | :x:
+suspicious-package | description | :x:
+betterzipql | description | :x:
+qlimagesize | description | :x:
+qlprettypatch | description | :x:
+webquicklook | description | :x:
+quicklookase | description | :x:
+qlvideo | description | :x:
+provisionql | description | :x:
+Marked 2 | description | :x:
+Pages | description | :x:
+Keynote | description | :x:
+Numbers | description | :x:

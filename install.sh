@@ -1,16 +1,7 @@
 #!/usr/bin/env bash
 
-# Get current dir (so run this script from anywhere)
-export DOTFILES_DIR DOTFILES_CACHE EXTRA_DIR
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-DOTFILES_CACHE="$DOTFILES_DIR/.cache.sh"
-EXTRA_DIR="$HOME/.extra"
-
-# Make utilities available
-export PATH="$DOTFILES_DIR/bin:$PATH"
-
-# Update dotfiles itself first
-if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
+# Install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Start installing all applications and binaries
 echo "Setting up your personal settings..."
@@ -21,9 +12,6 @@ brew update
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 brew bundle
-
-# Run tests
-if is-executable bats; then bats test/*.bats; else echo "Skipped: tests (missing: bats)"; fi
 
 # Make ZSH the default shell environment
 # chsh -s $(which zsh)
