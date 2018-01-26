@@ -2,6 +2,8 @@
 
 COMPUTER_NAME="TIE-Fighter"
 
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 osascript -e 'tell application "System Preferences" to quit'
 
 
@@ -16,6 +18,9 @@ sudo scutil --set ComputerName "$COMPUTER_NAME"
 sudo scutil --set HostName "$COMPUTER_NAME"
 sudo scutil --set LocalHostName "$COMPUTER_NAME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+
+# Add Exact CA root certificate to trust Exact self-signed SSL certificates
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain "$DOTFILES_DIR/macOS/certificates/ca.exactsoftware.com.cer"
 
 ###############################################################################
 # General UI/UX                                                               #
