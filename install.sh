@@ -6,7 +6,8 @@
 # Start installing all applications and binaries
 echo "Setting up your personal settings..."
 
-# Update Homebrew recipes
+# Update Homebrew recipes and disable analytics from being send
+brew analytics off
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
