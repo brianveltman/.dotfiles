@@ -3,7 +3,6 @@ cask_args appdir: "/Applications"
 
 ## Taps
 tap 'caskroom/cask'
-tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'caskroom/drivers'
 tap 'homebrew/bundle'
@@ -28,9 +27,9 @@ brew 'bash'
 # brew 'grep'
 # brew 'direnv'
 # brew 'dockutil'
-# brew 'git'
-# brew 'git-extras'
-# brew 'git-lfs'
+brew 'git'
+brew 'git-extras'
+brew 'git-lfs'
 # brew 'hub'
 # brew 'mackup'
 # brew 'mas'
@@ -50,6 +49,7 @@ brew 'bash'
 # cask 'alfred'
 # cask 'bartender'
 # cask 'caffeine'
+cask 'chatmate-for-whatsapp'
 # cask 'cleanmymac'
 # cask 'dropbox'
 # cask 'fantastical'
@@ -92,7 +92,7 @@ cask 'google-chrome'
 # cask 'provisionql'
 
 ## Fonts
-# cask 'font-fira-mono-for-powerline'
+cask 'font-fira-mono-for-powerline'
 
 ## Install Mac App Store apps
 # mas 'Sketch', id: 402476602

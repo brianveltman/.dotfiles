@@ -2,7 +2,7 @@
 
 ## Installing
 
-Clone repo and run
+Clone / download repo and run
 ```sh
 $ ./install.sh
 ```
@@ -12,7 +12,8 @@ $ ./install.sh
 App | Description | Part of this .dotfiles repo
 ------------ | ------------- | ------------
 Alfred | OSX Spotlight on steroides | :x:
-Homebrew | OSX missing package manager like apt-get | :x:
+ChatMate for WhatsApp | WhatsApp client with privacy features | :white_check_mark:
+Homebrew | OSX missing package manager like apt-get | :white_check_mark:
 Fantastical | Calendar | :x:
 1Password | Password manager | :x:
 Docker | description | :x:
@@ -25,7 +26,9 @@ iTerm | description | :x:
 Todoist | description | :x:
 Spotify | description | :x:
 Slack | description | :x:
-Git | Git cli | :x:
+Git | Git cli | :white_check_mark:
+Git-LFS | Git large file storage | :white_check_mark:
+Git Extras | Git utilities and aliases | :white_check_mark:
 Hub | GitHub cli | :x:
 SSH | description | :x:
 ZSH | description | :x:
@@ -39,8 +42,6 @@ brew-cask-completion | description | :x:
 zsh-completions | description | :x:
 direnv | description | :x:
 dockutil | description | :x:
-git-extras | description | :x:
-git-lfs | description | :x:
 mackup | description | :x:
 mas | description | :x:
 nvm | description | :x:
@@ -54,6 +55,7 @@ Bartender | description | :x:
 Caffeine | description | :x:
 Cleanmymac | description | :x:
 Chrome Canary | description | :x:
+Google Chrome | Web browser | :white_check_mark:
 GpgTools | description | :x:
 KeyCastr | description | :x:
 Little Snitch | description | :x:
