@@ -2,16 +2,14 @@
 cask_args appdir: "/Applications"
 
 ## Taps
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'caskroom/drivers'
+tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 
 ## Install ZSH
-# brew 'zsh'
-# brew 'zsh-completions'
-# brew 'brew-cask-completion'
+brew 'zsh'
+brew 'zsh-completions'
+brew 'brew-cask-completion'
 
 ## Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
