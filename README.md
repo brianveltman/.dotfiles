@@ -1,5 +1,9 @@
 # DOTFILES
 
+## Requirements
+
+Command Line Tools (CLT) for Xcode (from xcode-select --install or https://developer.apple.com/download/all/) or Xcode 3
+
 ## Installing
 
 Clone / download repo and run
