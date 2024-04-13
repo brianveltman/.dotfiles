@@ -43,19 +43,13 @@ brew 'git-lfs'
 
 
 ## Development
-## Apps
-# cask 'alfred'
-# cask 'bartender'
+cask 'alfred'
+#cask 'bartender'
 # cask 'caffeine'
-cask 'chatmate-for-whatsapp'
+#cask 'chatmate-for-whatsapp'
 # cask 'cleanmymac'
 # cask 'dropbox'
 # cask 'fantastical'
-# cask 'firefox'
-cask 'google-chrome'
-# cask 'google-chrome-canary'
-# cask 'gpgtools'
-# cask 'hyper'
 # cask 'keycastr'
 # cask 'little-snitch'
 # cask 'flux'
@@ -63,13 +57,8 @@ cask 'google-chrome'
 # cask 'quip'
 # cask 'sequel-pro'
 # cask 'micro-snitch'
-# cask 'textexpander'
 # cask 'rocket'
 # cask 'shuttle'
-# cask 'slack'
-# cask 'sublime-text'
-# cask 'virtualbox'
-# cask 'virtualbox-extension-pack'
 # cask 'mongodb-compass-beta'
 # cask 'softu2f'
 
@@ -90,7 +79,7 @@ cask 'google-chrome'
 # cask 'provisionql'
 
 ## Fonts
-cask 'font-fira-mono-for-powerline'
+#cask 'font-fira-mono-for-powerline'
 
 ## Install Mac App Store apps
 # mas 'Sketch', id: 402476602
